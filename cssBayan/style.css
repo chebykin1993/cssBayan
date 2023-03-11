@@ -1,14 +1,18 @@
-body {width: 1920px;
+body {
+width: 1920px;
 height: 1080px;
 margin: auto;}
 
-.title { width: 200px;
+.title {
+    position: relative;
+     width: 200px;
     height: 40px;
     font-size: 40px;
     margin-left: 100px;
     border: none;
 }
 .accordeon {
+    position: relative;
     width: 400px;
     height: 320px;
     margin-left: 100px;
@@ -18,12 +22,13 @@ margin: auto;}
     border-width: 3px;
     border-radius: 10px;   
 }
+
 .cry, .dive, .back, .encaps {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 400px;
     height: 80px;
     font-size: 20px;
     border-width: 2px;
@@ -31,9 +36,47 @@ margin: auto;}
     border-color: blueviolet;
     border-width: 1px;
 }
-.cry:hover, .dive:hover, .back:hover, .encaps:hover {
-    background-color: blueviolet;
-}
-.pic {
+.encaps {border: none;}
+.piccry, .picback, .picdive, .picencaps {
     display: none;
 }
+.accordeon:hover {height: 700px;}
+.cry:hover .piccry {
+position: relative;
+display: block;
+object-fit: cover;
+top: 50px;
+width: 400px;
+opacity: 1;
+transition: 2s ease-out;
+}
+.cry:hover {
+height: 400px
+}
+.dive:hover .picdive {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    width: 400px;
+    opacity: 1;
+    transition: 2s;
+}
+.dive:hover{height: 400px;}
+.back:hover .picback {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    width: 400px;
+    opacity: 1;
+    transition: 2s;
+}
+.back:hover {height: 400px;}
+.encaps:hover .picencaps {
+    position: relative;
+    display: block;
+    object-fit: cover;
+    width: 400px;
+    opacity: 1;
+    transition: 2s;
+}
+.encaps:hover {height: 400px;}
