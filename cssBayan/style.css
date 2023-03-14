@@ -25,7 +25,7 @@ margin: auto;
     border-radius: 10px;   
     margin: auto;
 }
-.url {display: flex; font-size: 20px; text-decoration: none; justify-content: center; }
+#url {display: flex; font-size: 20px; text-decoration: none; justify-content: center; }
 a:hover {border-style:groove ; border-color: blueviolet; border-width: 2px; border-radius: 5px;}
 .acry, .adive, .aback, .aencaps {
     display: flex;
