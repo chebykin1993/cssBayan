@@ -3,7 +3,8 @@ max-width: 1920px;
 height: 1080px;
 margin: auto;
 }
-.title {
+.title {display:flex;
+    flex-direction: column;
     width: 200px;
     height: 40px;
     position: relative;
@@ -24,7 +25,7 @@ margin: auto;
     border-radius: 10px;   
     margin: auto;
 }
-.url {display: flex; text-decoration: none; margin: 0 auto; justify-content: center; padding-top: 20px;}
+.url {display: flex; font-size: 20px; text-decoration: none; justify-content: center; }
 a:hover {border-style:groove ; border-color: blueviolet; border-width: 2px; border-radius: 5px;}
 .acry, .adive, .aback, .aencaps {
     display: flex;
